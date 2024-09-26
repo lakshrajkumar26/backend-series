@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const mongoose =require("mongoose");
 const jwt=require("jsonwebtoken");
 import bcrypt from "bcrypt";
@@ -93,33 +92,4 @@ userSchema.methods.generateRefreshToken=function(){
 
 const User = mongoose.model("User",userSchema)
 
-=======
-const mongoose =require("mongoose");
-
-const userSchema =mongoose.Schema=new Schema ({
-
-    username:{
-        type:String,
-        required:true,
-        unique:true,
-        lowercase:true,
-        trim:true,
-        index:true
-    },
-    email:{
-        type:String,
-        required:true,
-        unique:true,
-        lowercase:true,
-        trim:true,
-        index:true
-    },
-    
-    
-
-})
-
-const User =mongoose.model("User",userSchema)
-
->>>>>>> 3831b06aa47b291b1494b0432a179c15dafb9fbe
 export default User;
